@@ -1,0 +1,148 @@
+html, body, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: yellow;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 2%;
+}
+
+.menu_btn {
+    display: none;
+    padding: 4%;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid black;
+}
+
+.menu_btn:hover {
+    background: rgb(221, 221, 221,1);
+}
+
+.menu {
+    display: none;
+}
+
+
+.bg {
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+.gallery {
+    background: red;
+    height: 100%;
+}
+
+.style {
+    background: orange;
+    display: grid;
+    
+}
+
+.styles{
+    background: blue;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.schedule1{
+    background: green;
+}
+.schedule2 {
+    background: red;
+    display: none;
+}
+.schedule_wrap {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(100px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.sch {
+    background: yellow;
+    width: auto;
+    height: 150px;
+    margin: 20px;
+}
+
+.team{
+    background: purple;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.members {
+    background: rgb(7, 199, 247);
+}
+
+.about {
+    background: grey;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+}
+
+@media(max-width:767px) {
+    .schedule1 {
+        display: none;
+    }
+    .schedule2 {
+        display: block;
+    }
+
+    .schedule_wrap {
+        grid-template-columns: repeat(1, minmax(100px, 1fr));
+        grid-gap: 0px;
+    }
+
+    .big_menu {
+        display: none;
+    }
+
+    .menu_btn {
+        display: block;
+    }
+
+    .small_menu {
+        display: inline;
+        text-align: center;
+    }
+
+    .small_menu li {
+        border: 1px solid rgba(0,0,0,0.6 );
+        padding: 5px;
+        background: rgb(204, 204, 204);
+    }
+
+
+
+}
+
