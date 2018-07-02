@@ -6,3 +6,5 @@ const wrapperMenu = document.querySelector(".menu");
 navButton.addEventListener("click", function () {
     wrapperMenu.classList.toggle("small_menu");
 });
+
+console.log("Opica")!
