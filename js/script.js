@@ -10,12 +10,6 @@ navButton.addEventListener("click", function () {
 // for testing git
 console.log("Testing GIT");
 
-
-console.log("Opica")!
-console.log("Opica")!
-console.log("Opica")!
-console.log("Opica")!
-
-console.log("Opica")!
-console.log("Opica")!
-console.log("Opica")!
+for(var i = 0; i < 5; i++) {
+    console.log([i]);
+}
